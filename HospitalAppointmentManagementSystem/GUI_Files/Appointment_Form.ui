@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>793</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Appointment Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{
+border-image: url(:/image/image_3.jpg);
+}
+QLabel{
+color: rgb(255, 255, 255);
+font: 11pt &quot;Myanmar Text&quot;;
+padding: 5px;
+}
+QLineEdit{
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+border: 2px solid grey;
+border-top: 0px;
+border-right: 0px;
+border-left: 0px;
+border-bottom-color: rgb(255, 255, 255);
+}
+QLineEdit:hover{
+background-color: rgba(217, 217, 217, 50);
+color: rgb(255, 255, 255);
+border: 2px solid grey;
+border-top: 0px;
+border-right: 0px;
+border-left: 0px;
+border-bottom-color: rgb(255, 255, 255);
+}
+QPushButton{
+background-color: rgb(85, 125, 255);
+color: rgb(255, 255, 255);
+border: 1px solid;
+border-style: groove;
+border-bottom-right-radius: 4px;
+border-top-left-radius: 4px;
+font: 11pt &quot;MS Reference Sans Serif&quot;;
+}
+QPushButton:hover:!pressed{
+background-color: rgb(0, 85, 255);
+color: rgb(255, 255, 255);
+border: 1px solid;
+border-style: outset;
+border-bottom-right-radius: 8px;
+border-top-left-radius: 8px;
+font: 11pt &quot;MS Reference Sans Serif&quot;;
+}
+QPushButton:pressed:!hover{
+color: rgb(255, 255, 255);
+border: 1px solid;
+border-style: groove;
+border-bottom-right-radius: 4px;
+border-top-left-radius: 4px;
+font: 13pt &quot;MS Reference Sans Serif&quot;;
+}
+QRadioButton{
+font: 10pt &quot;MS Reference Sans Serif&quot;;
+color: rgb(255,255,255);
+}
+
+QListWidget {
+    show-decoration-selected: 1; /* make the selection span the entire width of the view */
+	color: rgb(238, 238, 236);
+	font: 57 11pt &quot;Ubuntu&quot;;
+}
+
+QListWidget::item:alternate {
+    background: #EEEEEE;
+}
+
+QListWidget::item:selected {
+    border: 1px solid #6a6ea9;
+}
+
+QListWidget::item:selected:!active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #ABAFE5, stop: 1 #8588B2);
+}
+
+QListWidget::item:selected:active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #6a6ea9, stop: 1 #888dd9);
+}
+
+QListWidget::item:hover {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(153, 209, 246, 255), stop:0.487562 rgba(72, 136, 139, 246), stop:0.810945 rgba(88, 161, 193, 255));
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Time:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Appontment Date:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="comboBox_docname">
+          <item>
+           <property name="text">
+            <string>--Select Doctor--</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Andy</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Charlie</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Doctor Name:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QTimeEdit" name="timeEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>User Name:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_userId">
+          <property name="font">
+           <font>
+            <family>Myanmar Text</family>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+            <underline>true</underline>
+           </font>
+          </property>
+          <property name="text">
+           <string>User Id-Value null</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDateEdit" name="dateEdit"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_username">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <widget class="QListWidget" name="listwidget_userdetails">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(46, 52, 54,80);</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_check_availability">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Check Availability</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_confirm">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Confirm Availability</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="images/login_reg.qrc"/>
+ </resources>
+ <connections/>
+</ui>
